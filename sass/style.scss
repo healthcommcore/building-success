@@ -1,0 +1,196 @@
+/*
+Theme Name: Nirvana child
+Theme URI: http://www.healthcommcore.org
+Description: A child theme of Nirvana tailored to HCC lab websites
+Author: Health Communication Core
+Author URI: http://www.healthcommcore.org
+Template: nirvana
+Version: 1.0.0
+License: GNU Neneral Public License
+License URI:
+Tags:
+Text Domain: nirvana-halecenter-child
+*/
+
+/** Variables **/
+$blue: #00AEE3;
+$teal: #207276;
+
+/* Nirvana Custom CSS */ 
+#branding {
+    border-bottom: #A11A24 1px solid;
+}
+.header-logo {
+  float: left;
+  margin-right: 50px;
+}
+
+.widget_search {
+  margin-top: 20px;
+}
+#forbottom {
+    min-height: 100px;
+}
+.sidey .widget-title, .widget-title span,
+#content .homepage-callouts h3 {
+    border-color: #A11A24;
+}
+.sidey .widget-title span,
+#content .homepage-callouts h3 {
+  text-transform: uppercase;
+  line-height: normal;
+  padding: 0 0 4px 10px;
+}
+.widget-area a,
+.widget-area a:link, 
+.widget-area a:visited {
+  text-decoration: underline;
+  position: relative;
+}
+
+.building-button {
+  background-color: #00AEE3;
+  text-align: center;
+  padding: 18px 0 20px;
+  width: 189px;
+  display: block;
+  color: #fff;
+  font-size: 1.0em;
+  word-spacing: 189px;
+  line-height: 1.12em;
+  font-weight: 600;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+}
+
+/** Homepage **/
+
+#frontpage {
+  .nivo-caption {
+    width: 90%;
+    right: 5%;
+    top: 20%;
+    h2 {
+      font-size: 48px;
+      letter-spacing: 0;
+    }
+  }
+}
+
+.practical-strategies.container {
+  width: 789px;
+}
+
+.entry-content {
+  .home-feature {
+    h1 {
+      color: $teal;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 800;
+      font-size: 2.3em !important;
+      margin-bottom: 20px;
+    }
+    p {
+      color: #000;
+      font-size: 1.2em;
+    }
+  }
+}
+
+.strategy-button-container {
+  margin: 40px auto;
+  .building-button {
+    margin-right: 74px;
+    margin-bottom: 32px;
+    float: left;
+    text-transform: uppercase;
+  }
+  .building-button:nth-child(3) {
+    margin-right: 0;
+  }
+  .building-button.three-line {
+    padding: 8px 0 10px;
+  }
+}
+
+#content { 
+  .entry-title, h2 {
+    font-weight: 700;
+  }
+  .blog-date {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  img.alignright {
+    margin-right: 20px;
+  }
+  .wp-caption {
+    background: rgb(180, 216, 222);
+    padding: 20px 40px 10px;
+    position: relative;
+  }
+}
+
+.building-lead-in {
+  color: $blue;
+  .emphasis {
+    text-transform: uppercase;
+    font-style: italic;
+  }
+}
+
+#footer {
+  border-top: #000 2px solid;
+  #footer-widget-area {
+    margin: 70px 0 20px;
+  }
+  #fourth {
+    .xoxo {
+      float: right;
+    }
+  }
+}
+
+#footer a, #footer a:hover {
+  text-decoration: underline;
+}
+#second {
+    text-align: center;
+}
+#third {
+    text-align: right;
+}
+#second img, #third img {
+    display: inline-block;
+}
+.footer-bottom {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.footer-bottom-container {
+    background: #A11A24;
+    padding: 18px 0 40px;
+}
+.footer-bottom-container, .footer-bottom-container a {
+    color: #fff
+}
+.footer-bottom-container nav {
+    text-align: center;
+}
+.footer-bottom-container ul {
+    list-style: none;
+    display: inline-block;
+}
+.footer-bottom-container li {
+    float: left;
+    border-left: #fff 1px solid;
+    padding: 0 8px;
+    font-size: 1.2em;
+}
+.footer-bottom-container li:first-child {
+    border: none;
+} 

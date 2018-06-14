@@ -14,6 +14,7 @@ Text Domain: nirvana-halecenter-child
 
 /** Variables **/
 $blue: #00AEE3;
+$light-blue: #7DD6F1;
 $teal: #207276;
 $dark-gray: #4B4B4B;
 $cream: #FDF4C5;
@@ -43,13 +44,6 @@ $cream: #FDF4C5;
   border-bottom: $blue 9px solid !important;
 }
 
-/*
-.sidey .widget-container a:active,
-.sidey .widget-container a:focus {
-  background: none;
-  color: $teal;
-}
-*/
 
 a:active, a:focus {
   background: none !important;
@@ -65,17 +59,54 @@ a:active, a:focus {
   a:active, a:focus {
     color: $teal !important;
   }
+  .widget-area {
+    .side-menu {
+      ul {
+        margin-left: 0;
+      }
+      ul.children {
+        margin-left: 20px;
+      }
+    }
+  }
 }
 
-.widget-area a,
-.widget-area a:link, 
-.widget-area a:visited {
-  text-decoration: underline;
-  position: relative;
+/** Side menu **/
+#primary {
+  margin-top: 78px;
+}
+.widget-area {
+  .side-menu {
+    a {
+      color: #000;
+      text-transform: uppercase;
+    }
+    a:hover, a:focus {
+      text-decoration: underline;
+      position: relative;
+    }
+    li.current_page_item a {
+      font-weight: 700;
+    }
+    ul { 
+      margin-top: 30px;
+      li {
+        margin-bottom: 1.0em;
+      }
+    }
+    ul.children {
+      margin-left: 30px;
+      margin-top: 0;
+      a {
+        text-transform: none;
+        font-size: 0.93em;
+      }
+    }
+  }
 }
 
 .building-button {
-  background-color: #00AEE3;
+  background-color: $blue;
   text-align: center;
   padding: 18px 0 20px;
   width: 189px;
@@ -85,6 +116,12 @@ a:active, a:focus {
   line-height: 1.12em;
   font-weight: 600;
   text-transform: uppercase;
+}
+.building-button:hover,
+.building-button:active,
+.building-button:focus {
+  background-color: $light-blue !important;
+  color: #fff;
 }
 
 .container {
@@ -201,6 +238,16 @@ a:active, a:focus {
   a, a:link, a:visited {
     text-decoration: underline;
   }
+  .side-menu a {
+    text-decoration: none;
+  }
+  sup a {
+    font-weight: 700;
+    font-size: 1.3em;
+  }
+  ul, ol {
+    margin-left: 2.5em;
+  }
   .blog-date {
     margin-bottom: 5px;
     margin-top: 5px;
@@ -237,6 +284,10 @@ a:active, a:focus {
   }
 }
 
+p + ul {
+  margin-top: -18px;
+}
+
 #content .entry-content h2.building-feature-title, 
 #pp-afterslider h2 {
   font-size: 1.0em;
@@ -264,6 +315,9 @@ a:active, a:focus {
     margin-bottom: 10px;
     margin-top: 0;
     text-transform: uppercase;
+  }
+  p + ul {
+    margin-top: 0;
   }
   .source {
     font-style: italic;
